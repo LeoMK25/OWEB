@@ -1,0 +1,56 @@
+body{
+    background-color: lightcoral;
+}
+
+p{
+    padding: 0.2em;
+    text-align: center;
+}
+
+h1{
+    text-indent: 1em;
+    font-size: 2.4em;
+    text-align: center;
+}
+h3{
+    text-indent: 1em;
+    font-size: 1.4em;
+    padding-left: 1em;
+}
+
+div{
+    background-color: rgb(199, 64, 64);
+    border: 3px solid black;
+    margin: 20px;
+    padding: .1em;
+}
+
+label{
+    font-size: 1em;
+}
+
+#questions{
+    background-color: brown;
+    padding: 1em;
+}
+
+#submitbutton{
+display: block;
+margin: 0 auto;
+}
+
+figure{
+    padding: .4em;
+    display: block;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+
+figcaption{
+text-align: center;
+}
