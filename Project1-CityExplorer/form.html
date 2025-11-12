@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form - Ingolstadt Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="navigation_title">Ingolstadt Explorer</div>
+            <ul class="navigation_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="login.html" class="login_button">Login</a></li>
+            </ul>
+        </nav>
+    </header>    
+    
+    <div class="content">
+        <h1>User Experience Feedback</h1>
+        <form id="feedback_form">
+            <div class="form_group">
+                <input type="text" id="first_name" placeholder="First Name" required>
+            </div>
+            
+            <div class="form_group">
+                <input type="text" id="last_name" placeholder="Last Name" required>
+            </div>
+            
+            <div class="form_group">
+                <input type="text" id="country" placeholder="Country" required>
+            </div>
+            
+            <div class="form_group">
+                <h3>Site Usability Rating</h3>
+                <div class="radio_group">
+                    <input type="radio" id="excellent" name="rating" value="Excellent" required>
+                    <label for="excellent">Excellent</label>
+                    
+                    <input type="radio" id="good" name="rating" value="Good">
+                    <label for="good">Good</label>
+                    
+                    <input type="radio" id="decent" name="rating" value="Decent">
+                    <label for="decent">Decent</label>
+                    
+                    <input type="radio" id="poor" name="rating" value="Poor">
+                    <label for="poor">Poor</label>
+                </div>
+            </div>
+            
+            <div class="form_group">
+                <h3>Pages Visited</h3>
+                <div class="checkbox_group">
+                    <input type="checkbox" id="home_page" name="pages" value="Home">
+                    <label for="home_page">Home</label>
+                    
+                    <input type="checkbox" id="gallery_page" name="pages" value="Gallery">
+                    <label for="gallery_page">Gallery</label>
+                    
+                    <input type="checkbox" id="blog_page" name="pages" value="Blog">
+                    <label for="blog_page">Blog</label>
+                    
+                    <input type="checkbox" id="form_page" name="pages" value="Form">
+                    <label for="form_page">Form</label>
+                    
+                    <input type="checkbox" id="login_page" name="pages" value="Login">
+                    <label for="login_page">Login</label>
+                </div>
+            </div>
+            
+            <div class="form_group">
+                <textarea id="comment" placeholder="Website Comment" rows="4"></textarea>
+            </div>
+            
+            <button type="submit" class="submit_btn">Submit Feedback</button>
+        </form>
+        <div id="form_message"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ingolstadt Explorer. All rights reserved.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
