@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Filtering</title>
+    </head>
+
+    <body>
+
+        <h2>Filterable Table</h2>
+        <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+        <input id="myInput" type="text" placeholder="Search First Name...">
+        <input id="myInput1" type="text" placeholder="Search Last Name...">
+        <input id="myInput2" type="text" placeholder="Search Email...">
+        <br><br>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody id="myTable">
+            <tr>
+                <td class="firstName">John</td>
+                <td class="lastName">Doe</td>
+                <td class="Email">john@example.com</td>
+            </tr>
+            <tr>
+                <td class="firstName">Mary</td>
+                <td class="lastName">Moe</td>
+                <td class="Email">mary@mail.com</td>
+            </tr>
+            <tr>
+                <td class="firstName">July</td>
+                <td class="lastName">Dooley</td>
+                <td class="Email">july@greatstuff.com</td>
+            </tr>
+            <tr>
+                <td class="firstName">Anja</td>
+                <td class="lastName">Ravendale</td>
+                <td class="Email">a_r@test.com</td>
+            </tr>
+            </tbody>
+        </table>
+        
+        <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+
+    </body>
+</html>
